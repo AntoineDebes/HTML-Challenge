@@ -107,6 +107,14 @@ ul {
   text-decoration: underline;
 }
 
+.main--menu--ul > li > a {
+  color: white;
+}
+
+.main--menu--ul > li > a:hover {
+  color: orange;
+}
+
 .gallery {
   grid-column: 2 / 4;
   grid-row: 1;
