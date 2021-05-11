@@ -22,12 +22,12 @@
     <main class="main">
         <nav>
             <ul class="main--nav--ul--list">
-                <li>Home</li>
-                <li>Contact</li>
-                <li>New Page 1</li>
-                <li>New Page 2</li>
-                <li>New Page 3</li>
-                <li>New Page 4</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">New Page 1</a></li>
+                <li><a href="#">New Page 2</a></li>
+                <li><a href="#">New Page 3</a></li>
+                <li><a href="#">New Page 4</a></li>
             </ul>
         </nav>
         <div class="grid--wrapper">
@@ -63,7 +63,7 @@
                     <h2>Block</h2>
                 </div>
                 <div class="block--head--text">
-                    <p>asdnasjndnasaasdasd</p>
+                    <p>asdna sjndnasaa sdasd</p>
                 </div>
                 <div class="block--head--sub-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ut debitis id, illo libero dolores odit nemo dolor possimus vel aliquid perferendis, quibusdam vero ratione tenetur. Voluptatum eius explicabo ab!</p>
@@ -100,5 +100,28 @@
             <p class="footer--text">Copyright &copy; 2021</p>
         </div>
     </footer>
+    <div class="form--container">
+        <form action="form">
+            <div class="form--application--socials">
+                <label for="name"><input type="text" placeholder="Your name"></label>
+                <label for="email"><input type="text" placeholder="ex@gmail.com"></label>
+                <label for="message"><input type="text" placeholder="71-987213"></label>
+            </div>
+            <div class="form--application--btn">
+                <label for="suggestion"><input type="radio">Suggestion</label>
+                <label for="complaint"><input type="radio">Complaint</label>
+            </div>
+            <div class="form--application--submit">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const btn = document.getElementById("submit");
+        btn.addEventListener("click",function(event){
+            event.preventDefault()
+        });
+    </script>
 </body>
 </html>
